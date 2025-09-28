@@ -39,19 +39,19 @@ const PomodoroApp = () => {
     },
     {
       id: 2,
-      title: "Lofi Hip Hop - Chill Beats",
-      artist: "Lofi Girl",
-      streamUrl: "https://www.youtube.com/watch?v=5qap5aO4i9A",
-      embedId: "5qap5aO4i9A", 
+      title: "Lord of the Rings - The Shire",
+      artist: "The Beauty Of Middle Earth",
+      streamUrl: "https://www.youtube.com/watch?v=HFlxEM6zZsc",
+      embedId: "HFlxEM6zZsc", 
       color: "from-blue-400 to-cyan-500",
       type: "youtube"
     },
     {
       id: 3,
-      title: "Jazz Lofi - Smooth Vibes",
-      artist: "Steezyasfuck",
-      streamUrl: "https://www.youtube.com/watch?v=DWcJFNfaw9c",
-      embedId: "DWcJFNfaw9c",
+      title: "Flute",
+      artist: "Nova Gujarati",
+      streamUrl: "https://www.youtube.com/watch?v=5jca-sWgemI",
+      embedId: "5jca-sWgemI",
       color: "from-purple-400 to-pink-500",
       type: "youtube"
     },
