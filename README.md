@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# 🍅 Pomodoro Flow  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, customizable **Pomodoro Timer Web App** built with **React + TailwindCSS**, featuring:  
+- Focus / Short Break / Long Break cycles  
+- Customizable durations & settings  
+- Session history and stats  
+- Dark/Light theme toggle  
+- Ambient **lofi YouTube live streams** integration 🎵  
+- Smooth animations and notifications  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features  
 
-### `npm start`
+- ⏱ **Pomodoro cycle**: 25/5/15 minutes (default, customizable)  
+- ▶️ **Controls**: Start / Pause / Reset / Skip  
+- 🔄 **Cycle logic**: 4 focus sessions → long break  
+- 📊 **Stats**: Daily completed Pomodoros with progress bar  
+- 🌙 **Theme**: Dark / Light mode toggle  
+- 🔔 **Notifications**: Pleasant chime + browser alerts  
+- 🎶 **Music**: Curated live lofi YouTube streams (play, pause, skip)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started  
 
-### `npm test`
+### 1. Clone Repository  
+```bash
+git clone https://github.com/shivashrestha7/pomodoro.git
+cd pomodoro
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Install Dependencies  
+```bash
+npm install
+```
 
-### `npm run build`
+### 3. Run Development Server  
+```bash
+npm start
+```
+App runs at `http://localhost:3000`  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Build for Production  
+```bash
+npm run build
+```
+This generates a `build/` folder ready for deployment.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🌐 Deployment (GitHub Pages)  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This repo is set up to deploy via **GitHub Pages**.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Install gh-pages:  
+   ```bash
+   npm install gh-pages --save-dev
+   ```  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. In `package.json`:  
+   ```json
+   "homepage": "https://shivashrestha7.github.io/pomodoro",
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Deploy with:  
+   ```bash
+   npm run deploy
+   ```  
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌍 Custom Domain  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This app is live at:  
+👉 **https://pomodoro.shivashrestha7.com.np**  
 
-### Code Splitting
+To configure your own:  
+- Add a **CNAME record** in your DNS:  
+  ```
+  Host: pomodoro
+  Type: CNAME
+  Target: shivashrestha7.github.io
+  ```  
+- In GitHub repo → **Settings → Pages → Custom domain**:  
+  ```
+  pomodoro.shivashrestha7.com.np
+  ```  
+- Enable **Enforce HTTPS** after DNS propagates.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🛠️ Tech Stack  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [React](https://react.dev/) (functional components + hooks)  
+- [TailwindCSS](https://tailwindcss.com/)  
+- [Lucide Icons](https://lucide.dev/)  
+- [YouTube Embed API](https://developers.google.com/youtube/iframe_api_reference)  
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 👨‍💻 Author  
 
-### Advanced Configuration
+**Shiva Shrestha**  
+- Portfolio: [shivashrestha7.com.np](https://shivashrestha7.com.np)  
+- Pomodoro App: [pomodoro.shivashrestha7.com.np](https://pomodoro.shivashrestha7.com.np)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⚡ Stay focused. Stay productive. Pomodoro Flow 🍅  
